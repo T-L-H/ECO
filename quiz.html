@@ -42,10 +42,7 @@ button {
     justify-content: center;
 
 }
-.question { 
-              text-align: center;
-              
-        }
+
 .slidecontainer {
     text-align: center;
 }
@@ -116,13 +113,35 @@ input[type="range"]::-moz-range-thumb {
     font-size: 300%;
     font-weight: bold;
 }
+.quote {
+    display: flex;
+    justify-content: center;
+    
+}
+.quotebox {
+    text-align: center;
+    color: white;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    padding: 1%;
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    /* align-items: center; */
+    background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+}
+
           </style>
     </head>
     <body>
-    
+      <div class="quote">
+        <div class="quotebox">
+           <h1>Calculate your impact on the enviornment</h1>
+       </div>
+    </div>
     </br>
-        <h1>Calculate your impact on the enviornment</h1>
         <h2>10: Always </br> 0: Never</h2>
+    </br>
+    <div class="quescontainer">
     </br>
         <div class="question">
         <label>How often do you drive a personal vehicle?</label>
@@ -204,7 +223,7 @@ input[type="range"]::-moz-range-thumb {
         </div>
         </div>
     </br>
-
+  </div>
     <div class="results">
         <span id="results"> </span>
     </div>
@@ -215,6 +234,7 @@ input[type="range"]::-moz-range-thumb {
     <br>
     <br>
     <a href="index.html">Return Home</a>
+  </br>
         <script>
 var slider1 = document.getElementById("num1");
 var output1 = document.getElementById("ans1");
